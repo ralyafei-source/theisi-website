@@ -526,7 +526,7 @@ footer{
 
     /* ── THE ARTWORK IMAGE ─────────────────────────────────────────── */
 
-    ART_OPACITY: 0.6,
+    ART_OPACITY: 0.45,
     /* How visible the original painted image is behind the animation.
        0.0 = invisible, 1.0 = full strength.
        Raise (e.g. 0.75) → the painting dominates, animation becomes a shimmer on top.
@@ -541,19 +541,19 @@ footer{
        Lower both (e.g. 0.03 / 0.07) → subtler, mistier flow.
        Keep MIN below MAX. */
 
-    STRANDS_UPPER: 24,   STRANDS_UPPER_MOBILE: 14,
-    STRANDS_LOWER: 18,   STRANDS_LOWER_MOBILE: 11,
+    STRANDS_UPPER: 28,   STRANDS_UPPER_MOBILE: 14,
+    STRANDS_LOWER: 20,   STRANDS_LOWER_MOBILE: 11,
     /* How many lines in the upper and lower currents.
        More strands = denser, richer braid but more work for the device.
        Mobile values are lower on purpose to keep phones smooth.
        Note: half of the LOWER strands follow the deep bottom band,
        half sweep through the inner arc under the eye. */
 
-    WAVE_AMPLITUDE: 2.4,
+    WAVE_AMPLITUDE: 2.8,
     /* How much each strand gently sways up/down while idle (in pixels).
        0 = perfectly still lines. 4-5 = noticeably breathing. */
 
-    DRAW_IN_TIME: 2400,
+    DRAW_IN_TIME: 2900,
     /* Milliseconds each strand takes to draw itself in on page load.
        Lower (1200) = snappier entrance. Higher (4000) = slower, more cinematic. */
 
@@ -573,7 +573,7 @@ footer{
        Raise both → busier, faster information flow. Lower → calmer drift. */
 
     DOT_OPACITY: 0.5,
-    DOT_OPACITY_MAGENTA: 0.85,
+    DOT_OPACITY_MAGENTA: 0.95,
     /* Visibility of the traveling dots. Magenta ones are the rare brand
        sparks (~6% of dots) — keeping them brighter makes them feel special. */
 
@@ -581,7 +581,7 @@ footer{
 
     CONST_DOT_OPACITY: 0.35,
     CONST_DOT_OPACITY_MAGENTA: 0.7,
-    CONST_LINE_OPACITY: 0.06,
+    CONST_LINE_OPACITY: 0.05,
     /* The faint scattered dots and the hairlines connecting them.
        These sit behind everything as texture. Raise the line opacity
        above ~0.10 and the web becomes visually loud — go gently. */
